@@ -1,0 +1,10 @@
+.button{
+    max-width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    cursor: pointer;
+    background-color: wheat;
+    border: none;
+}

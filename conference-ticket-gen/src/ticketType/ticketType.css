@@ -1,0 +1,56 @@
+.ticketTypeContainer {
+    border: 1px solid #24a0b5;
+    border-radius: 10px;
+    margin: 0;
+    /* margin: 2vw;
+    padding: 1vw; */
+}
+
+.ticketTypeContainer:hover{
+    cursor: pointer;
+    background-color: #197686;
+}
+
+.ticketType{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1vw 3vw 1vw 1vw;
+    
+}
+
+
+.ticketType h1,
+.ticketType p {
+    margin-bottom: 0.5vw;
+    margin-top: 0;
+   
+}
+.ticketType h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1vw;
+}
+.ticketType p{
+    font-size: 0.7rem;
+    font-weight: 100;
+    
+}
+
+@media (min-width:300px) and (max-width: 800px){
+    .ticketTypeContainer{
+        padding: 2vw;
+    }
+    .ticketType h1{
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 1vw;
+    }
+    .ticketType p{
+        font-size: 0.5rem;
+        font-weight: 100;
+        
+    }
+}

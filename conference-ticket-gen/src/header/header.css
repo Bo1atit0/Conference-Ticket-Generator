@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #197686;
+    margin: 1vw 5vw;
+    border-radius: 2vw;
+    padding: 0.5vw 1vw;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    
+    gap: 4vw;
+    color: gray;
+}
+header ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+ /* header ul li:nth-child(2),
+ header ul li:nth-child(3){
+    color: gray;
+ } */
+
+.ticketbtn{
+    background-color: white;
+    gap: 0.5rem;
+    padding: 1vw;
+    
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    header ul{
+        display: none;
+    }
+}

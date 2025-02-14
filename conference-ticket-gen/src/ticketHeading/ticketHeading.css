@@ -1,0 +1,63 @@
+.ticketheading {
+    max-width: 50vw;
+    max-height: 50vh;
+    margin: auto;
+    color: white;
+    text-align: center;
+    /* border: 1px solid beige; */
+}
+
+.ticketheading .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1vw;
+    color: rgb(197, 197, 197);
+    margin-bottom: 0;
+}
+
+.ticketheading .head p {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+.ticketheading .head h1{
+    font-weight: lighter;
+    font-size: 1.3rem;
+    margin-bottom: 1vw;
+}
+
+.ticketheading .lines{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+    
+}
+
+.ticketheading .lines .line1,
+.ticketheading .lines .line2,
+.ticketheading .lines .line3 {
+    width: 40%;
+    height: 0.2vh;
+    background-color: white;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .ticketheading .head h1{
+        font-size: 0.8rem;
+        line-height: 3vw;
+
+    }
+
+    .ticketheading .head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .ticketheading .head p{
+        margin-top: 0;
+        margin-bottom: 2vw;
+    }
+}
