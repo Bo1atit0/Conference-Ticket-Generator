@@ -71,6 +71,10 @@
     background-color: #02191d;
 }
 
+.homepage .container .inner-container .tickettype .ticketContainer .clicked{
+    background-color: #24a0b5;
+}
+
 .homepage .container .inner-container .ticketcount {
     display: flex;
 }
@@ -94,6 +98,13 @@
     cursor: pointer;
 }
 
+.homepage .container .inner-container .ticketcount form select:focus{
+    outline: 3px solid white;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
 .homepage .container .inner-container .ticketcount .homebtn{
     display: flex;
     align-items: center;
@@ -106,17 +117,30 @@
     padding: 1vw 8vw;
     margin: 1vw 2vw;
 }
+
+.homepage .container .inner-container .ticketcount .homebtn .cancelbtn:focus,
+.homepage .container .inner-container .ticketcount .homebtn .nextbtn:focus{
+    outline: 3px solid #24a0b5 ;
+}
+
+.homepage .container .inner-container .ticketcount .homebtn .cancelbtn:hover,
+.homepage .container .inner-container .ticketcount .homebtn .nextbtn:hover{
+    background: #24a0b5;
+    color: white;
+}
+
 .homepage .container .inner-container .ticketcount .homebtn .cancelbtn{
     background: transparent;
     border: 1px solid #24a0b5 ;
     outline: none;
     color: #24a0b5;
 }
-.homepage .container .inner-container .ticketcount .homebtn .nextbtn{
-    background: #24a0b5;
+/* .homepage .container .inner-container .ticketcount .homebtn .nextbtn{
+    background: transparent;
+
     border: none;
     color: white;
-}
+} */
 
 @media (min-width:300px) and (max-width: 800px) {
     .homepage .container .inner-container{

@@ -89,7 +89,7 @@ const ticket = () => {
           </div>
           <div className="ticketbton">
           <Button onClick={handleBooking} className='transparentbtn' >Book Another Ticket</Button>
-          <Button onClick={handleDownload} className='colouredbtn' >Download Ticket </Button>
+          <Button onClick={handleDownload} className='colouredbtn transparentbtn' >Download Ticket </Button>
         </div>
         </div>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
 import Header from '../../header/header'
@@ -25,6 +25,17 @@ const homepage = () => {
     handleTicketsButton();
   }
 
+  const [isClicked, setIsClicked] = useState(false)
+  const handleIsClicked = () =>{
+    setIsClicked(true)
+  }
+
+  const handleStock = () =>{
+    
+    alert('Out Of Stock.')
+    setIsClicked(false)
+  }
+
   
   return (
     <section className='homepage'>
@@ -45,9 +56,9 @@ const homepage = () => {
             <div className="tickettype">
               <p className='select'>Select Ticket Type</p>
               <div className="ticketContainer">
-                <TicketType price='Free' access='REGULAR ACCESS' quantity='20/52'/>
-                <TicketType price='$150' access='VIP ACCESS' quantity='OUT OF STOCK' />
-                <TicketType price='$500' access='VVIP ACCESS' quantity='OUT OF STOCK' />
+                <TicketType onClick={handleIsClicked} className={isClicked ? 'clicked' : ''} price='Free' access='REGULAR ACCESS' quantity='20/52'/>
+                <TicketType onClick={handleStock} className='tt2' price='$150' access='VIP ACCESS' quantity='OUT OF STOCK' />
+                <TicketType onClick={handleStock} className='tt2' price='$500' access='VVIP ACCESS' quantity='OUT OF STOCK' />
               </div>
 
               <div className="ticketcount">
@@ -65,14 +76,14 @@ const homepage = () => {
                     <option value="3">3</option> */}
                   </select>
 
-                  {errors.ticketcount && <div style={{color: 'red'}}>{errors.ticketcount.message}</div>}
+                  {errors.ticketcount && <div style={{color: 'red', fontSize: 'clamp(10px, 2vw, 15px)'}}>{errors.ticketcount.message}</div>}
 
                   <div className="homebtn">
                 <Button className='cancelbtn'>
                   Cancel
                 </Button>
 
-                <Button type='submit' className='nextbtn'>
+                <Button type='submit' className='cancelbtn'>
                   Next
                 </Button>
               </div>

@@ -44,6 +44,14 @@
     
 }
 
+.form-container .form form input:focus,
+.form-container .form form textarea:focus{
+    outline: 3px solid white;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
 .form-container .form form .upload{
     border: 1px solid #07373f;
     background: #052228;
@@ -115,11 +123,20 @@
     color: #24a0b5;
 }
 
-.form-container .form form .formbtn .get-ticket{
+.form-container .form form .formbtn .backbtn:focus{
+    outline: 3px solid #24a0b5 ;
+}
+
+.form-container .form form .formbtn .backbtn:hover{
     background: #24a0b5;
     border: none;
     color: white;
 }
+/* .form-container .form form .formbtn .get-ticket{
+    background: #24a0b5;
+    border: none;
+    color: white;
+} */
 
 @media (min-width: 300px) and (max-width: 1024px) {
     .form-container .form form{

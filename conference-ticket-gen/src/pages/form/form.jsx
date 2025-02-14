@@ -59,7 +59,7 @@ const Form = () => {
                     {required: 'Please Add you Avatar URL'}
                   )
                 }/>
-                {errors.avatar && <div style={{color: 'red'}}>{errors.avatar.message}</div>}
+                {errors.avatar && <div id='avatar-error' aria-live='polite' style={{color: 'red'}}>{errors.avatar.message}</div>}
             </div>
             
             <div className="lines">
@@ -77,7 +77,7 @@ const Form = () => {
               )
                 }
               />
-              {errors.name && <div style={{color: 'red', margin: '0 0 1vw 1vw',}}>{errors.name.message}</div>}
+              {errors.name && <div id='name-error' aria-live='polite' style={{color: 'red', margin: '0 0 1vw 1vw',}}>{errors.name.message}</div>}
 
             <label htmlFor="email">Enter Your Email</label>
             <input id='email' type="email" 
@@ -88,7 +88,7 @@ const Form = () => {
               )
                 
               }/>
-              {errors.email && <div style={{color: 'red', margin: '0 0 1vw 1vw'}}>{errors.email.message}</div>}
+              {errors.email && <div id='email-error' aria-live='polite' style={{color: 'red', margin: '0 0 1vw 1vw'}}>{errors.email.message}</div>}
 
               <label htmlFor="request">Special Request?</label>
               <textarea id="request"
@@ -99,7 +99,7 @@ const Form = () => {
                     Back
                   </Button>
 
-                  <Button type='submit' className='get-ticket'>
+                  <Button type='submit' className='backbtn get-ticket'>
                   Get My Free Ticket
                   </Button>
                 </div>
