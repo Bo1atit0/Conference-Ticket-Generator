@@ -62,9 +62,7 @@ const Form = () => {
                 {errors.avatar && <div id='avatar-error' aria-live='polite' style={{color: 'red'}}>{errors.avatar.message}</div>}
             </div>
             
-            <div className="lines">
-              
-            </div>
+            <div className="lines"></div>
 
             <label htmlFor="name">Enter Your Name</label>
             <input 

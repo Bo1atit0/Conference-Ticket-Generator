@@ -1,7 +1,9 @@
 
 .homepage .container{
     border: 1px solid #0e464f;
-    margin: 2vw 20vw;
+    /* margin: 2vw 18vw; */
+    margin: 2vh auto;
+    max-width: 65%;
     color: white;
     border-radius: 20px;
 }
@@ -12,7 +14,9 @@
 
 .homepage .container .inner-container{
     border: 1px solid #0e464f;
-    margin: 2vw 5vw;
+    /* margin: 2vw 5vw; */
+    max-width: 90%;
+    margin: 2vh auto;
     border-radius: 20px;
 }
 
@@ -24,12 +28,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2vw;
+    padding: 3vw;
     margin: 2vw;
     background: radial-gradient(ellipse at 10% 40%,#07373f 20%, #02191d 60%);
 }
 .homepage .container .inner-container .techember h1{
-    font-size: 4rem;
+    font-size: 3.5vw;
     font-weight: 300;
     margin-bottom: 0;
     font-family: 'Road Rage', cursive;
@@ -37,7 +41,7 @@
 }
 
 .homepage .container .inner-container .techember p{
-    font-size: 1rem;
+    font-size: 1.5vw;
     margin-top: 0;
     margin-bottom: 0.8vw;
     font-family: 'Roboto';
@@ -63,10 +67,13 @@
 .homepage .container .inner-container .tickettype .ticketContainer{
     display: flex;
     flex-wrap: nowrap;
+    max-width: 100%;
+    width: 90%;
     justify-content: space-between;
+    gap: 2vw;
     padding: 2vw;
     border: 1px solid #07373f;
-    margin: 2vw;
+    margin: 2vw auto;
     border-radius: 10px;
     background-color: #02191d;
 }
@@ -84,17 +91,25 @@
     display: flex;
     flex-direction: column;
     gap: 1vw;
-    padding: 0 1vw;
+    /* border: 2px solid black; */
+    max-width: 100%;
+    width: 100%;
+    margin: 1vw;
+}
+
+.homepage .container .inner-container .ticketcount form label{
+    font-size: 2vw;
 }
 
 .homepage .container .inner-container .ticketcount form select{
     background-color: #02191d;
     outline: #07373f;
     border: 1px solid #07373f;
-    padding: 0.5rem;
     color: white;
     border-radius: 4px;
-    width: 100%;
+    padding: 1vw 0;
+    /* width: 90%; */
+    margin: 0;
     cursor: pointer;
 }
 
@@ -114,8 +129,9 @@
 
 .homepage .container .inner-container .ticketcount .homebtn .cancelbtn,
 .homepage .container .inner-container .ticketcount .homebtn .nextbtn{
-    padding: 1vw 8vw;
-    margin: 1vw 2vw;
+    padding: 1em 8em;
+    margin:  0;
+    /* margin: 1vw 2vw; */
 }
 
 .homepage .container .inner-container .ticketcount .homebtn .cancelbtn:focus,
@@ -142,65 +158,21 @@
     color: white;
 } */
 
-@media (min-width:300px) and (max-width: 800px) {
-    .homepage .container .inner-container{
-        border: none;
-    }
-    .homepage .container .inner-container .techember h1{
-        font-size: 1.8rem;
-        font-weight: 200;
-        margin-bottom: 1vw;
-    }
-    
-    .homepage .container .inner-container .techember p{
-        font-size: 0.6rem;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 1.5vw;
-    }
+@media (max-width: 600px) {
 
-    .homepage .container .inner-container .techember p:nth-of-type(1){
-    margin-bottom: 5vw;
-    }
-
-    .homepage .container .inner-container .tickettype .select{
-        font-size: 0.5rem;
-        margin-top: 3vw;
-        margin-left: 3vw;
-    }
-    
     .homepage .container .inner-container .tickettype .ticketContainer{
         display: flex;
         flex-direction: column;
-        gap: 3vw;
+        /* gap: 3vw; */
         
     }
+}
 
-    .homepage .container .inner-container .ticketcount form select{
-        background-color: #02191d;
-        padding: 0.8vw;
-        margin-bottom: 2vw;
-        margin-left: 3vw;
-        width: 85%;
-    }
-    
+@media (max-width: 1024px) {
     .homepage .container .inner-container .ticketcount .homebtn{
         display: flex;
-        flex-direction: column-reverse;
-        gap: 1vw;
-        margin-bottom: 2vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-
-    .homepage .container .inner-container .ticketcount .homebtn .cancelbtn,
-    .homepage .container .inner-container .ticketcount .homebtn .nextbtn{
-    padding: 1.5vw 18vw;
-    }
-
-    .homepage .container .inner-container .ticketcount form .ticket-label{
-        font-size: 0.5rem;
-        margin-left: 4vw;
-        margin-top: 2vw;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2vw;
     }
 }

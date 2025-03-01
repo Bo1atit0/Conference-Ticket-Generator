@@ -1,11 +1,10 @@
 .form-container{
     border: 1px solid #0e464f;
-    margin: 2vw 20vw;
+    margin: 2vw auto;
     color: white;
     border-radius: 20px;
-
-    /* display: flex;
-    flex-direction: column; */
+    height: auto;
+    max-width: 60%;
 }
 
 .form-container .step2 .line2{
@@ -20,14 +19,17 @@
 .form-container .form form{
     display: flex;
     border: 1px solid #0e464f;
-    margin: 2vw 5vw;
+    margin: 2vw auto;
+    max-width: 90%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    gap: 2vw;
 }
 
 .form-container .form form label{
     margin: 0 1vw;
+    font-size: 2vw;
 }
 
 .form-container .form form input,
@@ -38,7 +40,7 @@
     padding: 0.5rem 1vw;
     color: white;
     border-radius: 4px;
-    margin: 1vw;
+    margin: 0 1vw;
     cursor: pointer;
     resize: none;
     
@@ -59,48 +61,56 @@
     border-radius: 10px;
     padding: 2vw;
 
-    
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
 }
 
 .form-container .form form .upload label{
-    margin: 2vw 0;
-    
+    margin-bottom: 0;
+    padding-bottom: 0;
     text-align: center;
+    font-size: 2vw;
+    /* border: 2px solid red; */
 }
 .form-container .form form .upload .upload-inner{
     background: #02161a;
-    margin: 2vw auto;
-    padding: 5.5vw 4vw;
+    padding: 10vw; 
+    height: auto;
     position: relative;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vw;
 }
 
 .form-container .form form .upload  input{
     width: 95%;
     margin: auto;
+    /* border: 2px solid darkblue; */
     /* padding-left: 1vw; */
     
 }
 
 .form-container .form form .upload .upload-inner .dragNdrop{
     background: #001e24;
-    width: 30%;
-    height: 21vh;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0.2vw;
-    padding: 1vw;
+    height: 120%;
     position: absolute;
-    top: -1vw;
-    right: 13vw;
     border-radius: 10px;
-
+    /* border: 2px solid red; */
 }
 
 .form-container .form form .upload .upload-inner .dragNdrop p{
-    font-size: 0.7rem;
+    font-size: 1.5vw;
+    margin: 2vw;
     white-space: wrap;
 }
 
@@ -112,7 +122,7 @@
 
 .form-container .form form .formbtn .backbtn,
 .form-container .form form .formbtn .get-ticket{
-    padding: 1vw 8vw;
+    padding: 1em 8em;
     margin: 1vw 2vw;
 }
 
@@ -129,7 +139,8 @@
 
 .form-container .form form .formbtn .backbtn:hover{
     background: #24a0b5;
-    border: none;
+    /* border: none; */
+    outline: none;
     color: white;
 }
 /* .form-container .form form .formbtn .get-ticket{
@@ -138,80 +149,10 @@
     color: white;
 } */
 
-@media (min-width: 300px) and (max-width: 1024px) {
-    .form-container .form form{
-        border: none;
-    }
-
-    .form-container .form form .upload{
-        border: 1px solid #07373f;
-        background: #052228;
-        margin: 1vw 0;
-        border-radius: 10px;
-        padding: 2vw;
-    
-    
-        
-    }
-    
-    .form-container .form form .upload label{
-        margin:  0;
-        padding: 0;
-        
-        font-size: 0.6rem;
-        text-align: center;
-    }
-    .form-container .form form .upload .upload-inner{
-        background: transparent;
-        
-        
-        padding: 2vw;
-    }
-
-
-    .form-container .form form .upload  input{
-        
-        margin: 0 auto;
-    }
-    
-    .form-container .form form .upload .upload-inner .dragNdrop{
-        background: #001e24;
-        margin: 0;
-        width: 100%;
-        height: 21vh;
-          right: 1vw;
-        position: relative;
-    
-    }
-
-    .form-container .form form label{
-        margin: 0.5vw 1vw;
-        font-size: 0.7rem;
-    }
-    
-    .form-container .form form input,
-    .form-container .form form textarea{
-        
-        padding: 0.5rem 1vw;
-        color: white;
-        border-radius: 4px;
-        margin: 1.5vw 1vw;
-        cursor: pointer;
-        
-    }
-
-    .form-container .form form textarea{
-        height: 10vh;
-    }
+@media (max-width: 600px) {
 
     .form-container .form form .formbtn{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .form-container .form form .formbtn .backbtn,
-    .form-container .form form .formbtn .get-ticket{
-        padding: 1.5vw 22vw;
     }
 }

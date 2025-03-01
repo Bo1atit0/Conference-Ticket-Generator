@@ -21,8 +21,9 @@ const ticket = () => {
   const ticketInfo = location.state
   return (
     <>
+    <Header />
     <div className="ticket">
-      <Header />
+      
       <div className="ticket-container">
         <TicketHeading heading='Ready' step='3' className='step3' />
       
@@ -36,10 +37,14 @@ const ticket = () => {
           <div className="ticketImage">
 
             <img className='ticket-image' src={TicketHolder} alt="Ticket Hoder" />
+
             <div className="ticketCard">
-              <h1>Techember Fest "25</h1>
-              <p>📍 04 Rumens road, Ikoyi, Lagos</p>
-              <p>📅 March 15, 2025 | 7:00 PM</p>
+              <div className="ticket-text">
+                <h1>Techember Fest "25</h1>
+                <p>📍 04 Rumens road, Ikoyi, Lagos</p>
+                <p>📅 March 15, 2025 | 7:00 PM</p>
+              </div>
+              
               <div className="ticket-img">
                 <img className='avatar' src={ticketInfo.avatar} alt="avatar" />
               </div>
@@ -79,9 +84,9 @@ const ticket = () => {
                   <p><strong>Special Requests?</strong></p>
                   <p>{ticketInfo.request || 'Nil'}</p>
                 </div>
-              </div>
+              </div> 
               
-            </div>
+            </div> 
             <div className="bar-code">
                 <img src={Barcode} alt="Barcode" />
             </div>
