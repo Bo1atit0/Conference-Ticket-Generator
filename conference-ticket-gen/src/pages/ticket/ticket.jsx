@@ -36,7 +36,7 @@ const ticket = () => {
 
           <div className="ticketImage">
 
-            <img className='ticket-image' src={TicketHolder} alt="Ticket Hoder" />
+            <img className='ticket-image' src={TicketHolder} alt="Ticket Holder" />
 
             <div className="ticketCard">
               <div className="ticket-text">
