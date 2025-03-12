@@ -109,7 +109,7 @@
 
     background: #08343c;
     /* font-size: 70%; */
-    font-size: clamp(8px, 2vw, 10px);
+    font-size: clamp(6px, 2vw, 8px);
     text-align: center;
     
     
